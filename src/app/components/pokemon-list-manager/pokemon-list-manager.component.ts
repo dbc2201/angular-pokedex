@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pokemon } from 'src/app/models/pokemon.model';
+import { PokemonHttpService } from 'src/app/services/pokemon-http.service';
 
 @Component({
 	selector: 'app-pokemon-list-manager',
@@ -9,4 +10,6 @@ import { Pokemon } from 'src/app/models/pokemon.model';
 export class PokemonListManagerComponent {
 	// dummy array to simulate the number of cards
 	pokemonArray: Pokemon[] = [];
+
+	constructor(private pokemonService: PokemonHttpService) {}
 }
