@@ -2,19 +2,23 @@
 	<mat-card class="ms-2 me-2 mb-4 p-3">
 		<mat-card-header class="pt-1 ps-1 pe-1">
 			<!-- <div mat-card-avatar></div> -->
-			<mat-card-title>{{ pokemon.name }}</mat-card-title>
-			<mat-card-subtitle>Dog Breed</mat-card-subtitle>
+			<mat-card-title>{{ pokemon?.name | titlecase }}</mat-card-title>
+			<mat-card-subtitle>
+				type : {{ pokemon?.types["0"].type.name }}
+			</mat-card-subtitle>
 		</mat-card-header>
 		<img
 			mat-card-image
-			src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"
-			alt="Photo of a Shiba Inu"
+			src="{{ pokemon?.sprites['front_default'] }}"
+			alt="{{ pokemon?.name }}"
 			class="img-thumbnail"
 			style="height: 200px; width: 200px"
 		/>
 		<mat-card-content>
 			<p>
-				The Shiba Inu is the smallest of the six original and distinct
+				<span> Height: {{ pokemon?.height }} decimeters</span>
+				<br />
+				<span> Weight: {{ pokemon?.weight }} hectograms</span>
 			</p>
 		</mat-card-content>
 		<mat-card-actions>

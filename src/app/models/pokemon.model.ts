@@ -3,6 +3,10 @@ export class Pokemon {
 	name: string;
 	type: string;
 	imageURL: string;
+	sprites: any;
+	types: any;
+	height: any;
+	weight: any;
 
 	constructor(id: number, name: string, type: string, imageURL: string) {
 		this.id = id;
