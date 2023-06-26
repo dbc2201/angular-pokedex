@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Pokemon } from 'src/app/models/pokemon.model';
 
 @Component({
 	selector: 'app-pokemon-list-manager',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
 })
 export class PokemonListManagerComponent {
 	// dummy array to simulate the number of cards
-	pokemonArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	pokemonArray: Pokemon[] = [];
 }
