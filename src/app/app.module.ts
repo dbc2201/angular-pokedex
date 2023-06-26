@@ -17,6 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { PokemonListManagerComponent } from './components/pokemon-list-manager/pokemon-list-manager.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
 import { MatCardModule } from '@angular/material/card';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
 	declarations: [
@@ -39,6 +40,7 @@ import { MatCardModule } from '@angular/material/card';
 		MatAutocompleteModule,
 		MatInputModule,
 		MatCardModule,
+		HttpClientModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
