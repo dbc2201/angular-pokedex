@@ -14,10 +14,11 @@ import { SearchPokemonComponent } from './components/search-pokemon/search-pokem
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
+import { PokemonListManagerComponent } from './components/pokemon-list-manager/pokemon-list-manager.component';
 // import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
-	declarations: [AppComponent, HeaderComponent, SearchPokemonComponent],
+	declarations: [AppComponent, HeaderComponent, SearchPokemonComponent, PokemonListManagerComponent],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
