@@ -14,7 +14,7 @@ export class PokemonListManagerComponent implements OnInit {
 	constructor(private pokemonService: PokemonHttpService) {}
 
 	ngOnInit(): void {
-		let numberOfPokemonToFetch = 100;
+		let numberOfPokemonToFetch = 200;
 		for (
 			let pokemonID = 1;
 			pokemonID <= numberOfPokemonToFetch;
