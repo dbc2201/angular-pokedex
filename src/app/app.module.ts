@@ -16,10 +16,16 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatInputModule } from '@angular/material/input';
 import { PokemonListManagerComponent } from './components/pokemon-list-manager/pokemon-list-manager.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
-// import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-	declarations: [AppComponent, HeaderComponent, SearchPokemonComponent, PokemonListManagerComponent, PokemonCardComponent],
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		SearchPokemonComponent,
+		PokemonListManagerComponent,
+		PokemonCardComponent,
+	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
@@ -32,7 +38,7 @@ import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.com
 		MatFormFieldModule,
 		MatAutocompleteModule,
 		MatInputModule,
-		// MatButtonModule,
+		MatCardModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
