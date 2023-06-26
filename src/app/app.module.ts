@@ -12,6 +12,7 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 import { SearchPokemonComponent } from './components/search-pokemon/search-pokemon.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
 	declarations: [AppComponent, HeaderComponent, SearchPokemonComponent],
@@ -25,6 +26,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 		MatIconModule,
 		MatListModule,
 		MatFormFieldModule,
+		MatAutocompleteModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent],
