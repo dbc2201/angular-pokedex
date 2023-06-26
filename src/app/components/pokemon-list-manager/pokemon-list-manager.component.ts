@@ -14,6 +14,20 @@ export class PokemonListManagerComponent implements OnInit {
 	constructor(private pokemonService: PokemonHttpService) {}
 
 	ngOnInit(): void {
-		throw new Error('Method not implemented.');
+		let numberOfPokemonToFetch = 100;
+		for (
+			let pokemonID = 1;
+			pokemonID <= numberOfPokemonToFetch;
+			pokemonID++
+		) {
+			this.pokemonService.getPokemon(pokemonID).subscribe({
+				next: (pokemon) => this.pokemonArray.push(pokemon),
+				error: (error) => {
+					alert('error loading data form the API');
+					console.error(error);
+					console.error(error.message);
+				},
+			});
+		}
 	}
 }
