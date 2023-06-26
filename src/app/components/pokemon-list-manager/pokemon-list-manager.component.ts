@@ -7,9 +7,13 @@ import { PokemonHttpService } from 'src/app/services/pokemon-http.service';
 	templateUrl: './pokemon-list-manager.component.html',
 	styleUrls: ['./pokemon-list-manager.component.css'],
 })
-export class PokemonListManagerComponent {
+export class PokemonListManagerComponent implements OnInit {
 	// dummy array to simulate the number of cards
 	pokemonArray: Pokemon[] = [];
 
 	constructor(private pokemonService: PokemonHttpService) {}
+
+	ngOnInit(): void {
+		throw new Error('Method not implemented.');
+	}
 }
