@@ -8,5 +8,9 @@ import { Pokemon } from 'src/app/models/pokemon.model';
 })
 export class PokemonCardComponent {
 	@Input()
-	pokemon: Pokemon | undefined;
+	pokemon: Pokemon;
+
+	constructor() {
+		this.pokemon = new Pokemon(0, 'PIKACHU DUMMY', 'ELECTRIC', '');
+	}
 }
